@@ -28,7 +28,7 @@ int main() {
         for (int i = 0; i < window.getSize().x / symbolSize; ++i) {
             sf::RectangleShape symbol(sf::Vector2f(symbolSize, symbolSize));
             symbol.setFillColor(sf::Color::White);
-            symbol.setPosition(i * symbolSize, window.getSize().y - symbolSize); // پایین صفحه
+            symbol.setPosition(i * symbolSize, window.getSize().y - symbolSize);
 
             window.draw(symbol);
         }
@@ -36,7 +36,7 @@ int main() {
         for (int i = 0; i < window.getSize().y / symbolSize; ++i) {
             sf::RectangleShape symbol(sf::Vector2f(symbolSize, symbolSize));
             symbol.setFillColor(sf::Color::White);
-            symbol.setPosition(0, i * symbolSize); // سمت چپ صفحه
+            symbol.setPosition(0, i * symbolSize); 
 
             window.draw(symbol);
         }
@@ -44,7 +44,7 @@ int main() {
         for (int i = 0; i < window.getSize().y / symbolSize; ++i) {
             sf::RectangleShape symbol(sf::Vector2f(symbolSize, symbolSize));
             symbol.setFillColor(sf::Color::White);
-            symbol.setPosition(window.getSize().x - symbolSize, i * symbolSize); // سمت راست صفحه
+            symbol.setPosition(window.getSize().x - symbolSize, i * symbolSize); 
 
             window.draw(symbol);
         }
